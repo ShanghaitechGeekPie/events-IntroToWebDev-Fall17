@@ -2,6 +2,6 @@
 
 ## 安排
 
-|   时间   |     主题     |          内容          |  主讲  |
-|---------|--------------|------------------------|--------|
-| 第5周    | 引论         | HTML, CSS, JavaScript  | 石嘉禾 |
+|   时间   |          内容          |  主讲  |
+|---------|------------------------|--------|
+| 第5周    | [HTML, CSS, JavaScript](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/week05.md) | 石嘉禾 |
