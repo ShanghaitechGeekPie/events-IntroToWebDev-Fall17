@@ -1,2 +1,7 @@
-# events-IntroToWebDev-Fall17
-Course materials for introduction to web-based application development, fall 2017.
+# 应用/网站开发组讲学活动 (2017秋)
+
+## 安排
+
+|   时间   |     主题     |          内容          |  主讲  |
+|---------|--------------|------------------------|--------|
+| 第5周    | 引论         | HTML, CSS, JavaScript  | 石嘉禾 |
