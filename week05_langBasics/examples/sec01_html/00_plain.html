@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh"><!-- 语言代码参见 ISO 639-1 -->
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 视图声明 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- http-equiv 代表 HTTP Header equivalence -->
+    <meta http-equiv="refresh" content="10;url=http://www.shanghaitech.edu.cn">
+
+    <!-- <title> 元素对应标题 -->
+    <title>First HTML Page</title>
+
+    <!-- Chrome 移动版支持主题色 -->
+    <meta name="theme-color" content="#0A3CA0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABXSURBVDhPtY1bEsAgCAO5/6VtxtCIWjs+xv0xLCC2Q6px+8PUUGS0kO85MuF5J5QZAHMxsQfUFvKepQjLRoJikBp6L8NwFV4EXk+ysLDz/Rq8AD7LY8wejseeYltp9UEAAAAASUVORK5CYII=">
+
+</head>
+<body>
+    <h1>First <abbr title="超文本标记语言">HTML</abbr> Page</h1>
+        <p lang="en">Hello World</p>
+    
+    <h2>消息</h2>
+        <p><em>至多</em>10秒后你将会被重定向至<a href="http://www.shanghaitech.edu.cn">上海科技大学官网</a></p>
+    
+    <h2>引用</h2>
+        <p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <cite>MDN blockquote page</cite></a>:
+        </p>
+        
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+          <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+          Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+        </blockquote>
+        
+        <p>The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+        for short quotations that don't require paragraph breaks.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+        <cite>MDN q page</cite></a>.</p>
+    
+    <h2>Lorem ...</h2>
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Porro repellat modi voluptate magni aspernatur.
+        Illum, quo nam nobis quia dignissimos quidem officiis atque?
+        Fuga, quasi! Modi temporibus rerum excepturi placeat.
+        </p>
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Dolorem debitis odio est corporis nisi facilis aut aspernatur illo maiores repudiandae possimus recusandae doloribus omnis, <br>
+        expedita unde, sequi soluta, nulla architecto?
+        </p>
+        <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Repellat sunt id dignissimos,
+nobis praesentium laboriosam sequi ducimus reprehenderit
+fugiat animi recusandae possimus error voluptates,
+pariatur odit aliquam nostrum asperiores nulla.
+        </pre>
+    
+    <h2>一些列表</h2>
+    
+        <!-- 无序列表 -->
+        <ul>
+            <li>帐篷</li>
+                <ul>
+                    <li>外壳</li>
+                    <li>撑杆</li>
+                </ul>
+            <li>野餐垫</li>
+        </ul>
+
+        <ol>
+            <li>打开电源</li>
+            <li>打开连网开关</li>
+            <li>选择 Wi-Fi 接入点</li>
+        </ol>
+        
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language，超文本标记语言</dd>
+        </dl>
+    
+    <h2>展现代码</h2>
+    <pre><code>var para = document.querySelector('p');
+
+para.onclick = function() {
+    alert('Owww, stop poking me!');
+}</code></pre>
+
+<p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+<p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>A</kbd>.</p>
+
+<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+</pre>
+
+    <hr>
+    
+    <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABXSURBVDhPtY1bEsAgCAO5/6VtxtCIWjs+xv0xLCC2Q6px+8PUUGS0kO85MuF5J5QZAHMxsQfUFvKepQjLRoJikBp6L8NwFV4EXk+ysLDz/Rq8AD7LY8wejseeYltp9UEAAAAASUVORK5CYII=">
+        上海科技大学 <a href="https://geekpie.org">学生 GeekPie 社团</a></p>
+
+    <p>最后更改于<time datetime="2017-10-15">2017年10月15日</time></p>
+</body>
+</html>
