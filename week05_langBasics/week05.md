@@ -3,7 +3,7 @@
 HTML, CSS, JavaScript
 =====================
 
-本 Markdown 在 Visual Studio Code 下借助 Markdown+Math（`goessner.mdmath`）插件完成。
+本 Markdown 在 Visual Studio Code 下借助 `goessner.mdmath` 插件完成。
 
 课前准备
 -------
@@ -26,7 +26,7 @@ HTML, CSS, JavaScript
 
 小灶系列本来的第一讲想介绍的是数据的存储形式，从csv、json和数据库讲起。但为了将开课时间提前到第五周，尽早开讲，同时又不会来不及做较为充足的准备，第一讲最后还是选择了从数据的呈现讲起。
 
-HTML
+为什么不能比HTML更简单
 ----
 
 ### 数字化信息
@@ -82,9 +82,81 @@ $$\{\rm{false},\,\rm{true}\} \mapsto \{0,\,1\}$$
         time: "宋",
         name: "王安石"
     },
-    lines:[
+    line: [
         "墙角数枝梅，凌寒独自开。",
         "遥知不是雪，为有暗香来。"
     ]
 }
 ```
+
+> #### 示例1：
+> `examples/sec01_html/00_plain.html` 是一个简单的 HTML 5 页面，它展现了
+> * 纯HTML文件的基本结构
+>    * `<!DOCTYPE html>` 声明
+>    * `<head>`（头部）
+>    * `<body>`（主干）
+> * [采用 Base 64 硬编码](https://en.wikipedia.org/wiki/Data_URI_scheme)的图片文件
+>    * 作为收藏夹图标（favicon）
+>    * 作为图片元素（`<img>`）
+> * 列表元素 `<ul>`、`<ol>`、`<dl>`
+> * 换行符元素`<br>`
+
+> #### TODO 示例：表单
+> `examples/sec01_html/TODO_01_form.html` 演示了一个基本的表单
+
+> #### TODO 示例：表格
+> `examples/sec01_html/TODO_02_table.html` 演示了几个基本的表格。尽管在网站设计中已经很少见了，但表格依旧是用于实现电子邮件复杂布局的一个主流选择。
+
+> #### TODO 示例：`div`
+> `examples/sec01_html/TODO_03_div.html` 演示了基于 `div` 的布局
+
+穿上 CSS 好逛街
+--------------
+CSS 的全名叫 Cascaded Stylesheet，即“层叠样式表”。一般而言，记录结构化内容的任务全都交由 HTML 完成，而对于内容的外观部分，则是由 CSS 来完成的。
+
+CSS 的各个语句块可以对 DOM 中的元素赋予各种外观参数。包括定位信息、颜色信息、阴影信息、边框信息……在高版本的 CSS 中，也可以指定过渡效果、关键帧动画等信息。
+
+CSS 入门的2个关键点是**选择器**（指定方法、属性继承）、**盒模型**（`padding`-`border`-`margin`），对这两个关键点有所了解后，就能完成很多事情了。
+
+早期版本的 CSS 只能将所有数据直接指定，而没有设计变量、循环等表达机制。因此产生了一些专门用来编译 CSS 文件的工具，其中 SaSS（基于 Ruby）和 LESS（基于 JavaScript）最为流行。在新的标准草案中，已经加入了原生实现的变量机制。
+
+> #### TODO 示例：选择器
+> `examples/sec01_css/TODO_00_selector.html` 演示了选择器对应语句的效果
+
+> #### TODO 示例：盒模型
+> `examples/sec01_css/TODO_01_box_model.html` 演示了盒模型对应语句的视觉效果
+
+> #### TODO 示例：响应式布局
+> `examples/sec01_css/TODO_02_responsive.html` 演示了响应式布局的一种实现
+
+> #### TODO 示例：过渡动画
+> `examples/sec01_css/TODO_03_transition.html` 演示了过渡动画
+
+> #### TODO 示例：关键帧动画
+> `examples/sec01_css/TODO_04_key_frame.html` 演示了关键帧动画
+
+> #### TODO 示例：布局技巧
+> `examples/sec01_css/TODO_05_positioning.html` 演示了各类比较 tricky 的布局技巧，如固定在页面顶端、在页面中垂直居中等。
+
+JavaScript：浏览器不再只是“浏览”器
+--------------------------------
+在 JavaScript 出现之前，浏览器的用户互动基本上都要通过表单和服务器发生互动，然后从服务器获取新页面来实现。
+
+设想你要制作一个和电脑对战的五子棋，在 JavaScript 出现之前，用户可能在 9 个单选框中点击一个标上`X`，然后点击提交，用户的选择被发送到服务器端，然后服务器选择一个`O`，发送回客户端。
+
+但当有了 JavaScript 之后，你可以让用户浏览器内执行的 JavaScript 脚本来决定到底选哪个格子标上`O`，而不再需要向服务器进行通信了。
+
+当然，早些时候，有好几个流行度不输 JavaScript 的页内交互解决方案，比如来自微软的 ActiveX、半死不活的 Silverlight。还有来自 Adobe 的 Shockwave Flash，也曾借助设计师能快速上手的 Flash 而红遍大江南北。
+
+在网页应用中的 JavaScript，主要操作的是 DOM 中的各个元素。浏览器的开发者在浏览器的 JavaScript 引擎中，提供了操作 HTML 和 CSS 的各类 API，以及进行 HTTP 通信的各类 API。
+
+开发者工具：不再苦烹无米之炊！
+---------------------------
+不管是 Chrome，还是 Firefox，还是 Edge……大多数的现代浏览器，都提供了功能丰富的开发者工具。
+
+开发者工具中，一般提供了以下的基本工具
+* DOM 元素查看器
+* JavaScript Console
+* 页面资源查看器
+* 网络请求瀑布流
+* 安全信息查看器

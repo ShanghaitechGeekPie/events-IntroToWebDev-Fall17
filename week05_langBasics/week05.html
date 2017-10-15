@@ -1,0 +1,160 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.1/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body class="markdown-body">
+<p data-line="0" class="code-line">第5周</p>
+<h1 data-line="2" class="code-line" id="html-css-javascript">HTML, CSS, JavaScript</h1>
+<p data-line="5" class="code-line">本 Markdown 在 Visual Studio Code 下借助 <code>goessner.mdmath</code> 插件完成。</p>
+<h2 data-line="7" class="code-line" id="%E8%AF%BE%E5%89%8D%E5%87%86%E5%A4%87">课前准备</h2>
+<ul>
+<li data-line="10" class="code-line">下载/升级到一款如下列出的最新版本的浏览器（本系列小灶将以 Chrome 完成绝大多数的示例）
+<ul>
+<li data-line="11" class="code-line">Chrome (<a href="https://www.google.com/chrome/browser/index.html">官网</a> / <a href="http://www.google.cn/chrome/browser/desktop/index.html">谷歌中国官网</a> / <a href="http://dl.pconline.com.cn/download/51614-1.html">太平洋软件站</a>)</li>
+<li data-line="12" class="code-line"><a href="https://www.mozilla.org/zh-CN/firefox/new/">Firefox</a></li>
+</ul>
+</li>
+<li data-line="13" class="code-line">下载一款纯文本编辑器，推荐（本系列将以 Visual Studio Code 完成大多数的示例）
+<ul>
+<li data-line="14" class="code-line"><a href="https://code.visualstudio.com/download">Visual Studio Code</a> from Microsoft</li>
+<li data-line="15" class="code-line"><a href="https://atom.io">Atom</a> from GitHub</li>
+<li data-line="16" class="code-line"><a href="https://www.sublimetext.com/3">Sublime Text 3</a></li>
+<li data-line="17" class="code-line"><a href="https://notepad-plus-plus.org/download/">Notepad++</a> (仅适用于 Windows)</li>
+</ul>
+</li>
+<li data-line="18" class="code-line">（可选）下载相关实时预览插件
+<ul>
+<li data-line="19" class="code-line"><code>hdg.live-html</code> for Visual Studio Code</li>
+</ul>
+</li>
+</ul>
+<h2 data-line="21" class="code-line" id="%E5%89%8D%E8%A8%80">前言</h2>
+<p data-line="24" class="code-line">第一次的小灶活动，我们会接触到3种分工明确的计算机语言。（实际上，HTML和CSS更适合被称为格式标准。而JavaScript则是一种图灵完备的编程语言。）</p>
+<p data-line="26" class="code-line">小灶系列本来的第一讲想介绍的是数据的存储形式，从csv、json和数据库讲起。但为了将开课时间提前到第五周，尽早开讲，同时又不会来不及做较为充足的准备，第一讲最后还是选择了从数据的呈现讲起。</p>
+<h2 data-line="28" class="code-line" id="%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E6%AF%94html%E6%9B%B4%E7%AE%80%E5%8D%95">为什么不能比HTML更简单</h2>
+<h3 data-line="31" class="code-line" id="%E6%95%B0%E5%AD%97%E5%8C%96%E4%BF%A1%E6%81%AF">数字化信息</h3>
+<p data-line="33" class="code-line">对于计算机而言，任何事务最底层的存在形式就是两种互斥的逻辑态。我们定义一个bit能存储一个逻辑态，这个逻辑态要么是“真”，要么就是“假”。在只有一个bit的情况下，我们只能建立2个双射关系。最常见的一个单bit双射关系如下</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>{</mo><mrow><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo separator="true">,</mo><mspace width="0.16667em"></mspace><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">e</mi></mrow><mo>}</mo><mo>↦</mo><mo>{</mo><mn>0</mn><mo separator="true">,</mo><mspace width="0.16667em"></mspace><mn>1</mn><mo>}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\\{\\rm{false},\\,\\rm{true}\\} \\mapsto \\{0,\\,1\\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mopen">{</span><span class="mord"><span class="mord"><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">a</span><span class="mord mathrm">l</span><span class="mord mathrm">s</span><span class="mord mathrm">e</span></span><span class="mpunct">,</span><span class="mord"><span class="mspace thinspace"></span><span class="mord"><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">u</span><span class="mord mathrm">e</span></span><span class="mclose">}</span><span class="mrel">↦</span><span class="mopen">{</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathrm"><span class="mspace thinspace"></span><span class="mord mathrm">1</span></span><span class="mclose">}</span></span></span></span></span></span></span></eqn></section><p data-line="37" class="code-line">当我们用多个逻辑态组成各种唯一的序列时，我们就有了让用逻辑态与现实生活中的各种事物建立双射关系的可能。</p>
+<p data-line="39" class="code-line">当我们有5个bit时，我们就能建立32对双射关系，可以表示24个字母了；有6个bit时，我们就能有64对双射关系，大小写字母都能表示了。</p>
+<p data-line="41" class="code-line">但是单单能表达英语字母是不够的，我们还需要有标点符号，还需要空格、换行符、用来表达数学运算的<code>+-*/</code>、删除、回退……。第一个真正具有足够“表达力”的映射集——ASCII（音：ASS-kee）编码，筛选出了128个字符，用7个bit进行表达。ASCII的确定，让人们可以以一种熟悉的形式与计算机进行交互。</p>
+<h3 data-line="43" class="code-line" id="%E7%BB%93%E6%9E%84%E5%8C%96%E4%BF%A1%E6%81%AF">结构化信息</h3>
+<p data-line="45" class="code-line">在日常生活中，我们可以接触到很多的信息。人可以直接处理多种存在形式的信息，比如爱因斯坦的手稿、林肯乐队的一首歌……而对计算机而言，宣纸墨迹、歌曲声音在经过一定处理前，都是没有办法去处理的。</p>
+<p data-line="47" class="code-line">印刷出来的一首古诗一般都是这样的：</p>
+<blockquote data-line="49" class="code-line">
+<p data-line="49" class="code-line">梅花（宋·王安石）<br>
+墙角数枝梅，凌寒独自开。<br>
+遥知不是雪，为有暗香来。</p>
+</blockquote>
+<p data-line="53" class="code-line">如果直接把上面这几行文字这些作为存储形式，电脑处理起来有些麻烦。</p>
+<pre class="hljs"><code><div><span class="hljs-string">'梅花（宋·王安石）\n墙角数枝梅，凌寒独自开。\n遥知不是雪，为有暗香来。'</span>
+</div></code></pre>
+<p data-line="59" class="code-line">电脑一般会更喜欢如下的形式：</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">ancientPoem</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"诗"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>梅花<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">authorTime</span>&gt;</span>宋<span class="hljs-tag">&lt;/<span class="hljs-name">authorTime</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">authorName</span>&gt;</span>王安石<span class="hljs-tag">&lt;/<span class="hljs-name">authorName</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">content</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">line</span>&gt;</span>墙角数枝梅，凌寒独自开。<span class="hljs-tag">&lt;/<span class="hljs-name">line</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">line</span>&gt;</span>遥知不是雪，为有暗香来。<span class="hljs-tag">&lt;/<span class="hljs-name">line</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">content</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ancientPoem</span>&gt;</span>
+</div></code></pre>
+<p data-line="75" class="code-line">或是如下的形式</p>
+<pre class="hljs"><code><div>{
+    type: <span class="hljs-string">"诗"</span>,
+    title: <span class="hljs-string">"梅花"</span>,
+    author: {
+        time: <span class="hljs-string">"宋"</span>,
+        name: <span class="hljs-string">"王安石"</span>
+    },
+    lines:[
+        <span class="hljs-string">"墙角数枝梅，凌寒独自开。"</span>,
+        <span class="hljs-string">"遥知不是雪，为有暗香来。"</span>
+    ]
+}
+</div></code></pre>
+<blockquote data-line="91" class="code-line">
+<h4 data-line="91" class="code-line" id="%E7%A4%BA%E4%BE%8B1%EF%BC%9A">示例1：</h4>
+<p data-line="92" class="code-line"><code>examples/sec01_html/00_plain.html</code> 是一个简单的 HTML 5 页面，它展现了</p>
+<ul>
+<li data-line="93" class="code-line">纯HTML文件的基本结构
+<ul>
+<li data-line="94" class="code-line"><code>&lt;!DOCTYPE html&gt;</code> 声明</li>
+<li data-line="95" class="code-line"><code>&lt;head&gt;</code>（头部）</li>
+<li data-line="96" class="code-line"><code>&lt;body&gt;</code>（主干）</li>
+</ul>
+</li>
+<li data-line="97" class="code-line"><a href="https://en.wikipedia.org/wiki/Data_URI_scheme">采用 Base 64 硬编码</a>的图片文件
+<ul>
+<li data-line="98" class="code-line">作为收藏夹图标（favicon）</li>
+<li data-line="99" class="code-line">作为图片元素（<code>&lt;img&gt;</code>）</li>
+</ul>
+</li>
+<li data-line="100" class="code-line">列表元素 <code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;dl&gt;</code></li>
+<li data-line="101" class="code-line">换行符元素<code>&lt;br&gt;</code></li>
+</ul>
+</blockquote>
+<blockquote data-line="103" class="code-line">
+<h4 data-line="103" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E8%A1%A8%E5%8D%95">TODO 示例：表单</h4>
+<p data-line="104" class="code-line"><code>examples/sec01_html/TODO_01_form.html</code> 演示了一个基本的表单</p>
+</blockquote>
+<blockquote data-line="106" class="code-line">
+<h4 data-line="106" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E8%A1%A8%E6%A0%BC">TODO 示例：表格</h4>
+<p data-line="107" class="code-line"><code>examples/sec01_html/TODO_02_table.html</code> 演示了几个基本的表格。尽管在网站设计中已经很少见了，但表格依旧是用于实现电子邮件复杂布局的一个主流选择。</p>
+</blockquote>
+<blockquote data-line="109" class="code-line">
+<h4 data-line="109" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9Adiv">TODO 示例：<code>div</code></h4>
+<p data-line="110" class="code-line"><code>examples/sec01_html/TODO_03_div.html</code> 演示了基于 <code>div</code> 的布局</p>
+</blockquote>
+<h2 data-line="112" class="code-line" id="%E7%A9%BF%E4%B8%8A-css-%E5%A5%BD%E9%80%9B%E8%A1%97">穿上 CSS 好逛街</h2>
+<p data-line="114" class="code-line">CSS 的全名叫 Cascaded Stylesheet，即“层叠样式表”。一般而言，记录结构化内容的任务全都交由 HTML 完成，而对于内容的外观部分，则是由 CSS 来完成的。</p>
+<p data-line="116" class="code-line">CSS 的各个语句块可以对 DOM 中的元素赋予各种外观参数。包括定位信息、颜色信息、阴影信息、边框信息……在高版本的 CSS 中，也可以指定过渡效果、关键帧动画等信息。</p>
+<p data-line="118" class="code-line">CSS 入门的2个关键点是<strong>选择器</strong>（指定方法、属性继承）、<strong>盒模型</strong>（<code>padding</code>-<code>border</code>-<code>margin</code>），对这两个关键点有所了解后，就能完成很多事情了。</p>
+<p data-line="120" class="code-line">早期版本的 CSS 只能将所有数据直接指定，而没有设计变量、循环等表达机制。因此产生了一些专门用来编译 CSS 文件的工具，其中 SaSS（基于 Ruby）和 LESS（基于 JavaScript）最为流行。在新的标准草案中，已经加入了原生实现的变量机制。</p>
+<blockquote data-line="122" class="code-line">
+<h4 data-line="122" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E9%80%89%E6%8B%A9%E5%99%A8">TODO 示例：选择器</h4>
+<p data-line="123" class="code-line"><code>examples/sec01_css/TODO_00_selector.html</code> 演示了选择器对应语句的效果</p>
+</blockquote>
+<blockquote data-line="125" class="code-line">
+<h4 data-line="125" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E7%9B%92%E6%A8%A1%E5%9E%8B">TODO 示例：盒模型</h4>
+<p data-line="126" class="code-line"><code>examples/sec01_css/TODO_01_box_model.html</code> 演示了盒模型对应语句的视觉效果</p>
+</blockquote>
+<blockquote data-line="128" class="code-line">
+<h4 data-line="128" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80">TODO 示例：响应式布局</h4>
+<p data-line="129" class="code-line"><code>examples/sec01_css/TODO_02_responsive.html</code> 演示了响应式布局的一种实现</p>
+</blockquote>
+<blockquote data-line="131" class="code-line">
+<h4 data-line="131" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB">TODO 示例：过渡动画</h4>
+<p data-line="132" class="code-line"><code>examples/sec01_css/TODO_03_transition.html</code> 演示了过渡动画</p>
+</blockquote>
+<blockquote data-line="134" class="code-line">
+<h4 data-line="134" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%85%B3%E9%94%AE%E5%B8%A7%E5%8A%A8%E7%94%BB">TODO 示例：关键帧动画</h4>
+<p data-line="135" class="code-line"><code>examples/sec01_css/TODO_04_key_frame.html</code> 演示了关键帧动画</p>
+</blockquote>
+<blockquote data-line="137" class="code-line">
+<h4 data-line="137" class="code-line" id="todo-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7">TODO 示例：布局技巧</h4>
+<p data-line="138" class="code-line"><code>examples/sec01_css/TODO_05_positioning.html</code> 演示了各类比较 tricky 的布局技巧，如固定在页面顶端、在页面中垂直居中等。</p>
+</blockquote>
+<h2 data-line="140" class="code-line" id="javascript%EF%BC%9A%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E5%86%8D%E5%8F%AA%E6%98%AF%E2%80%9C%E6%B5%8F%E8%A7%88%E2%80%9D%E5%99%A8">JavaScript：浏览器不再只是“浏览”器</h2>
+<p data-line="142" class="code-line">在 JavaScript 出现之前，浏览器的用户互动基本上都要通过表单和服务器发生互动，然后从服务器获取新页面来实现。</p>
+<p data-line="144" class="code-line">设想你要制作一个和电脑对战的五子棋，在 JavaScript 出现之前，用户可能在 9 个单选框中点击一个标上<code>X</code>，然后点击提交，用户的选择被发送到服务器端，然后服务器选择一个<code>O</code>，发送回客户端。</p>
+<p data-line="146" class="code-line">但当有了 JavaScript 之后，你可以让用户浏览器内执行的 JavaScript 脚本来决定到底选哪个格子标上<code>O</code>，而不再需要向服务器进行通信了。</p>
+<p data-line="148" class="code-line">当然，早些时候，有好几个流行度不输 JavaScript 的页内交互解决方案，比如来自微软的 ActiveX、半死不活的 Silverlight。还有来自 Adobe 的 Shockwave Flash，也曾借助设计师能快速上手的 Flash 而红遍大江南北。</p>
+<p data-line="150" class="code-line">在网页应用中的 JavaScript，主要操作的是 DOM 中的各个元素。浏览器的开发者在浏览器的 JavaScript 引擎中，提供了操作 HTML 和 CSS 的各类 API，以及进行 HTTP 通信的各类 API。</p>
+<h2 data-line="152" class="code-line" id="%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%EF%BC%9A%E4%B8%8D%E5%86%8D%E8%8B%A6%E7%83%B9%E6%97%A0%E7%B1%B3%E4%B9%8B%E7%82%8A%EF%BC%81">开发者工具：不再苦烹无米之炊！</h2>
+<p data-line="154" class="code-line">不管是 Chrome，还是 Firefox，还是 Edge……大多数的现代浏览器，都提供了功能丰富的开发者工具。</p>
+<p data-line="156" class="code-line">开发者工具中，一般提供了以下的基本工具</p>
+<ul>
+<li data-line="157" class="code-line">DOM 元素查看器</li>
+<li data-line="158" class="code-line">JavaScript Console</li>
+<li data-line="159" class="code-line">页面资源查看器</li>
+<li data-line="160" class="code-line">网络请求瀑布流</li>
+<li data-line="161" class="code-line">安全信息查看器</li>
+</ul>
+
+</body></html>
