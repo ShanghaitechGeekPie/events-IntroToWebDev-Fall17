@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 关键帧动画示例</title>
+    <style>
+        @keyframes bigSmall {
+            0% {
+                font-size: 1em;
+            }
+            40% {
+                font-size: 10em;
+            }
+            80% {
+                font-size: 3em;
+            }
+            90% {
+                font-size: 6em;
+            }
+            100% {
+                font-size: 1em;
+            }
+        }
+
+        #box {
+            animation: bigSmall 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 关键帧动画示例</h1>
+    <div id="container">
+        <div id="box">
+            变大变小的字
+        </div>
+    </div>
+</body>
+</html>

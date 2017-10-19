@@ -136,11 +136,11 @@ CSS 入门的2个关键点是**选择器**（指定方法、属性继承）、**
 > #### 示例：过渡动画
 > `examples/sec02_css/03_transition.html` 演示了过渡动画
 
-> #### TODO 示例：关键帧动画
-> `examples/sec02_css/TODO_04_key_frame.html` 演示了关键帧动画
+> #### 关键帧动画
+> `examples/sec02_css/04_key_frame.html` 演示了关键帧动画
 
-> #### TODO 示例：布局技巧
-> `examples/sec02_css/TODO_05_positioning.html` 演示了各类比较 tricky 的布局技巧，如固定在页面顶端、在页面中垂直居中等。
+> #### 布局技巧
+> `examples/sec02_css/05_positioning.html` 跳转到的[学习 CSS 布局](http://zh.learnlayout.com/index.html)演示了各类布局示例，如固定在页面顶端、在页面中垂直居中等
 
 JavaScript：浏览器不再只是“浏览”器
 --------------------------------
