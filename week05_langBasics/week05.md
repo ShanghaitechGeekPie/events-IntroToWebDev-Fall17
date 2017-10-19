@@ -92,7 +92,7 @@ $$\{\rm{false},\,\rm{true}\} \mapsto \{0,\,1\}$$
 ```
 
 > #### 示例1：
-> [`examples/sec01_html/00_plain.html`](https://raw.githubusercontent.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/master/week05_langBasics/examples/sec01_html/00_plain.html) 是一个简单的 HTML 5 页面，它展现了
+> [`examples/sec01_html/00_plain.html`](http://htmlpreview.github.io/?https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/examples/sec01_html/00_plain.html) 是一个简单的 HTML 5 页面，它展现了
 > * 纯HTML文件的基本结构
 >    * `<!DOCTYPE html>` 声明
 >    * `<head>`（头部）
@@ -104,13 +104,13 @@ $$\{\rm{false},\,\rm{true}\} \mapsto \{0,\,1\}$$
 > * 换行符元素`<br>`
 
 > #### 示例：表单
-> [`examples/sec01_html/01_form.html`](https://raw.githubusercontent.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/master/week05_langBasics/examples/sec01_html/01_form.html) 演示了一个基本的表单示例，现在很少有应用会直接使用这种最原始的表单。更多的应用选择直接通过 JavaScript 来负责表单的交互。同时，包括`React`在内的各类前端框架，也都有很多组件库内置了组件化设计的表单元素。
+> [`examples/sec01_html/01_form.html`](http://htmlpreview.github.io/?https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/examples/sec01_html/01_form.html) 演示了一个基本的表单示例，现在很少有应用会直接使用这种最原始的表单。更多的应用选择直接通过 JavaScript 来负责表单的交互。同时，包括`React`在内的各类前端框架，也都有很多组件库内置了组件化设计的表单元素。
 
 > #### 示例：表格
-> [`examples/sec01_html/02_table.html`](https://raw.githubusercontent.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/master/week05_langBasics/examples/sec01_html/02_table.html) 演示了几个基本的表格。尽管在网站设计中已经很少见了，但表格依旧是用于实现电子邮件复杂布局的一个主流选择。
+> [`examples/sec01_html/02_table.html`](http://htmlpreview.github.io/?https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/examples/sec01_html/02_table.html) 演示了几个基本的表格。尽管在网站设计中已经很少见了，但表格依旧是用于实现电子邮件复杂布局的一个主流选择。
 
 > #### TODO 示例：`<div>` 与 `<span>`
-> [`examples/sec01_html/03_div.html`](https://raw.githubusercontent.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/master/week05_langBasics/examples/sec01_html/03_div.html) 演示了 `<div>` 块布局元素与 `<span>` 行内布局元素的基本特性。
+> [`examples/sec01_html/03_div.html`](http://htmlpreview.github.io/?https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/examples/sec01_html/03_div.html) 演示了 `<div>` 块布局元素与 `<span>` 行内布局元素的基本特性。
 
 穿上 CSS 好逛街
 --------------
