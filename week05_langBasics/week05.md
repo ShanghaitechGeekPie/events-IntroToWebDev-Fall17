@@ -122,23 +122,23 @@ CSS 入门的2个关键点是**选择器**（指定方法、属性继承）、**
 
 早期版本的 CSS 只能将所有数据直接指定，而没有设计变量、循环等表达机制。因此产生了一些专门用来编译 CSS 文件的工具，其中 SaSS（基于 Ruby）和 LESS（基于 JavaScript）最为流行。在新的标准草案中，已经加入了原生实现的变量机制。
 
-> #### TODO 示例：选择器
-> `examples/sec01_css/TODO_00_selector.html` 演示了选择器对应语句的效果
+> #### 示例：选择器
+> `examples/sec02_css/00_selector.html` 演示了选择器对应语句的效果
 
-> #### TODO 示例：盒模型
-> `examples/sec01_css/TODO_01_box_model.html` 演示了盒模型对应语句的视觉效果
+> #### 示例：盒模型
+> `examples/sec02_css/01_box_model.html` 演示了盒模型对应语句的视觉效果
 
 > #### TODO 示例：响应式布局
-> `examples/sec01_css/TODO_02_responsive.html` 演示了响应式布局的一种实现
+> `examples/sec02_css/02_responsive.html` 演示了响应式布局的一种实现
 
 > #### TODO 示例：过渡动画
-> `examples/sec01_css/TODO_03_transition.html` 演示了过渡动画
+> `examples/sec02_css/TODO_03_transition.html` 演示了过渡动画
 
 > #### TODO 示例：关键帧动画
-> `examples/sec01_css/TODO_04_key_frame.html` 演示了关键帧动画
+> `examples/sec02_css/TODO_04_key_frame.html` 演示了关键帧动画
 
 > #### TODO 示例：布局技巧
-> `examples/sec01_css/TODO_05_positioning.html` 演示了各类比较 tricky 的布局技巧，如固定在页面顶端、在页面中垂直居中等。
+> `examples/sec02_css/TODO_05_positioning.html` 演示了各类比较 tricky 的布局技巧，如固定在页面顶端、在页面中垂直居中等。
 
 JavaScript：浏览器不再只是“浏览”器
 --------------------------------
@@ -153,13 +153,13 @@ JavaScript：浏览器不再只是“浏览”器
 在网页应用中的 JavaScript，主要操作的是 DOM 中的各个元素。浏览器的开发者在浏览器的 JavaScript 引擎中，提供了操作 HTML 和 CSS 的各类 API，以及进行 HTTP 通信的各类 API。
 
 > #### TODO 示例：定时
-> `examples/sec02_js/TODO_00_settimeout.html` 演示了`setTimeOut`实现的定时功能，类似的函数还有`setInterval`
+> `examples/sec03_js/TODO_00_settimeout.html` 演示了`setTimeOut`实现的定时功能，类似的函数还有`setInterval`
 
 > #### TODO 示例：操作页面元素
-> `examples/sec02_js/TODO_01_dom_manipulation.html` 演示了使用 JS 完成的 DOM 操作
+> `examples/sec03_js/TODO_01_dom_manipulation.html` 演示了使用 JS 完成的 DOM 操作
 
 > #### TODO 示例：jQuery
-> `examples/sec01_css/TODO_02_jquery.html` 演示了经典的基于`jQuery`的 DOM 操作
+> `examples/sec03_js/TODO_02_jquery.html` 演示了经典的基于`jQuery`的 DOM 操作
 
 开发者工具：不再苦烹无米之炊！
 ---------------------------

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 盒模型示例</title>
+
+    <style>
+        #outer {
+            font-size: 2em;
+            background-color: grey;
+            text-align: center;
+        }
+        #inner {
+            font-size: 3.5em;
+
+            padding: 0.5em 0.5em 0.5em 0.5em;
+
+            border-radius: 0px 1em 0px 0px;
+            -moz-border-radius: 0px 1em 0px 0px;
+            -webkit-border-radius: 0px 200px 0px 0px;
+            border: 0.25em solid #E04E3F;
+
+            margin: 0.2em 0.2em 1em 0.2em;
+            
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 盒模型示例</h1>
+    <div id="container">
+        <div id="outer">
+            This is outer element
+            <div id="inner">
+                This is<br>
+                inner<br>
+                element
+            </div>
+            <!--div id="inner-2">
+                Just another<br>
+                inner element
+            </div-->
+            This is outer element
+        </div>
+    </div>
+</body>
+</html>

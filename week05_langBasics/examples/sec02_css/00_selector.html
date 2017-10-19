@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 选择器示例</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .refdiv {
+            background-color: rgb(255,210,80);
+        }
+        #s-two {
+            font-family: serif;
+            background-color: rgb(255,100,100);
+        }
+        div:not(#container) {
+            font-size: 1.25em;
+        }
+        .refdiv > ul {
+            background-color: yellowgreen;
+        }
+        .refdiv > ul > li {
+            background-color: gainsboro;
+        }
+        #main-list > li:nth-child(3) {
+            color: purple;
+        }
+        #linkdiv-regexp-detect a[href^="https://"] {
+            color: green;
+        }
+        #linkdiv-regexp-detect a[href^="http://"] {
+            color: orangered;
+        }
+        #linkdiv-attr-based a[safe] {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS 选择器示例</h1>
+    </header>
+    <div class="refdiv" id="container">
+        <span class="refcls" id="s-one">
+            <code>&lt;span&gt;</code> element with <code>class="refclass"</code> and <code>id="s-one"</code>
+        </span>
+        <br>
+        <span class="refcls" id="s-two">
+            <code>&lt;span&gt;</code> element with <code>class="refclass"</code> and <code>id="s-two"</code>
+        </span>
+        <br>
+        <ul id="main-list">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+        </ul>
+    </div>
+    <div class="secdiv">
+        <span class="refcls" id="s-three">
+            <code>&lt;span&gt;</code> element with <code>class="secclass"</code> and <code>id="s-three"</code>
+        </span>
+    </div>
+    <div id="linkdiv-regexp-detect">
+        <ul>
+            <li><a href="https://geekpie.org">GeekPie Site Over SSL</a></li>
+            <li><a href="http://www.shanghaitech.edu.cn">ShanghaiTech Website is not HTTPS-ready</a></li>
+        </ul>
+    </div>
+    <div id="linkdiv-attr-based">
+        <ul>
+            <li><a safe="true" href="https://geekpie.org">GeekPie Site Over SSL</a></li>
+            <li><a href="http://www.shanghaitech.edu.cn">ShanghaiTech Website is not HTTPS-ready</a></li>
+        </ul>
+    </div>
+</body>
+</html>
