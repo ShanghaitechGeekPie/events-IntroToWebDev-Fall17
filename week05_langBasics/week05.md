@@ -101,8 +101,8 @@ $$\{\rm{false},\,\rm{true}\} \mapsto \{0,\,1\}$$
 > * 列表元素 `<ul>`、`<ol>`、`<dl>`
 > * 换行符元素`<br>`
 
-> #### TODO 示例：表单
-> `examples/sec01_html/TODO_01_form.html` 演示了一个基本的表单
+> #### 示例：表单
+> `examples/sec01_html/01_form.html` 演示了一个基本的表单示例，现在很少有应用会直接使用这种最原始的表单。
 
 > #### TODO 示例：表格
 > `examples/sec01_html/TODO_02_table.html` 演示了几个基本的表格。尽管在网站设计中已经很少见了，但表格依旧是用于实现电子邮件复杂布局的一个主流选择。
@@ -149,6 +149,15 @@ JavaScript：浏览器不再只是“浏览”器
 当然，早些时候，有好几个流行度不输 JavaScript 的页内交互解决方案，比如来自微软的 ActiveX、半死不活的 Silverlight。还有来自 Adobe 的 Shockwave Flash，也曾借助设计师能快速上手的 Flash 而红遍大江南北。
 
 在网页应用中的 JavaScript，主要操作的是 DOM 中的各个元素。浏览器的开发者在浏览器的 JavaScript 引擎中，提供了操作 HTML 和 CSS 的各类 API，以及进行 HTTP 通信的各类 API。
+
+> #### TODO 示例：定时
+> `examples/sec02_js/TODO_00_settimeout.html` 演示了`setTimeOut`实现的定时功能，类似的函数还有`setInterval`
+
+> #### TODO 示例：操作页面元素
+> `examples/sec02_js/TODO_01_dom_manipulation.html` 演示了使用 JS 完成的 DOM 操作
+
+> #### TODO 示例：jQuery
+> `examples/sec01_css/TODO_02_jquery.html` 演示了经典的基于`jQuery`的 DOM 操作
 
 开发者工具：不再苦烹无米之炊！
 ---------------------------
