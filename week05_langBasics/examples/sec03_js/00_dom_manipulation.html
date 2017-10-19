@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS DOM 操作示例</title>
+
+    <style>
+        #outer {
+            font-size: 2em;
+            background-color: grey;
+            text-align: center;
+        }
+        #inner {
+            font-size: 3.5em;
+
+            padding: 0.5em 0.5em 0.5em 0.5em;
+
+            border-radius: 0px 1em 0px 0px;
+            -moz-border-radius: 0px 1em 0px 0px;
+            -webkit-border-radius: 0px 200px 0px 0px;
+            border: 0.25em solid rgb(10,20,120);
+            
+            color: white;
+            background-color: rgba(0,0,0,0.8);
+        }
+        button {
+            font-size: 2em;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var innerElement;
+        
+        function changeAgain() {
+            innerElement.style.fontSize = "1.5em";
+        }
+
+        function manipulateDom() {
+            innerElement = document.getElementById('inner');
+            innerElement.innerText = '内部div的内容被JavaScript改掉啦';
+            innerElement.style.fontSize = "1em";
+
+            var para = document.createElement("p");
+            var node = document.createTextNode("还在后面挂了个<p>元素");
+            para.appendChild(node);
+            innerElement.appendChild(para);
+
+            innerElement.addEventListener("click", changeAgain);
+        }
+    </script>
+
+</head>
+<body>
+    <h1>CSS 盒模型示例</h1>
+    <div id="container">
+        <div id="outer">
+            <button onclick="manipulateDom();">点我改变 DOM</button>
+            <div id="inner">
+                This is<br>
+                inner<br>
+                element
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

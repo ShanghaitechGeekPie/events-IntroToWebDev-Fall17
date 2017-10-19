@@ -136,10 +136,10 @@ CSS 入门的2个关键点是**选择器**（指定方法、属性继承）、**
 > #### 示例：过渡动画
 > `examples/sec02_css/03_transition.html` 演示了过渡动画
 
-> #### 关键帧动画
+> #### 示例：关键帧动画
 > `examples/sec02_css/04_key_frame.html` 演示了关键帧动画
 
-> #### 布局技巧
+> #### 示例：布局技巧
 > `examples/sec02_css/05_positioning.html` 跳转到的[学习 CSS 布局](http://zh.learnlayout.com/index.html)演示了各类布局示例，如固定在页面顶端、在页面中垂直居中等
 
 JavaScript：浏览器不再只是“浏览”器
@@ -154,17 +154,18 @@ JavaScript：浏览器不再只是“浏览”器
 
 在网页应用中的 JavaScript，主要操作的是 DOM 中的各个元素。浏览器的开发者在浏览器的 JavaScript 引擎中，提供了操作 HTML 和 CSS 的各类 API，以及进行 HTTP 通信的各类 API。
 
-> #### TODO 示例：定时
-> `examples/sec03_js/TODO_00_settimeout.html` 演示了`setTimeOut`实现的定时功能，类似的函数还有`setInterval`
+> #### 示例：操作页面元素
+> `examples/sec03_js/00_dom_manipulation.html` 演示了使用 JS 完成的 DOM 操作，以及如何添加事件监听器（Event Listener）。
 
-> #### TODO 示例：操作页面元素
-> `examples/sec03_js/TODO_01_dom_manipulation.html` 演示了使用 JS 完成的 DOM 操作
+> #### 示例：定时
+> `examples/sec03_js/01_settimeout.html` 演示了`setTimeOut`实现的定时功能，和`setInterval`实现的周期定时功能
+> 在 https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution 可以阅读到其他可以实现时序视觉变化的方法
 
-> #### TODO 示例：jQuery
-> `examples/sec03_js/TODO_02_jquery.html` 演示了经典的基于`jQuery`的 DOM 操作
+> #### 示例：jQuery
+> `examples/sec03_js/02_jquery.html` 演示了经典的基于`jQuery`的 DOM 操作
 
-开发者工具：不再苦烹无米之炊！
----------------------------
+开发者工具：开发者视角
+--------------------
 不管是 Chrome，还是 Firefox，还是 Edge……大多数的现代浏览器，都提供了功能丰富的开发者工具。
 
 开发者工具中，一般提供了以下的基本工具

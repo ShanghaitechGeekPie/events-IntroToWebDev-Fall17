@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery 示例</title>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#will-disapper").dblclick(function(){
+                $(this).hide();
+                $("h1").text("双击找回来");
+            });
+            $("h1").dblclick(function(){
+                $(this).text("jQuery 示例");
+                $("#will-disapper").show();
+            });
+        });
+    </script>
+
+    <style>
+        #will-disapper {
+            text-align: center;
+            font-size: 3em;
+            border: 0.25em solid goldenrod;
+            background-color: yellow;
+            padding: 3em auto 3em auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jQuery 示例</h1>
+    <div id="will-disapper">双击即消失</p>
+</body>
+</html>

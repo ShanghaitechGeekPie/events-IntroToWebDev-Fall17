@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript 定时示例</title>
+
+    <style>
+        #container {
+            text-align: center;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        form {
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
+        .clock-disp {
+            font-size: 3em;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var c = 0;
+        var t;       // timer implemented by setTimeOut
+        var siTimer; // timer implemented by setInterval
+
+        function timedCount() {
+            document.getElementById('clock-settimeout').innerText = c.toString();
+            c = c + 1
+            t = window.setTimeout("timedCount()", 1000)
+        }
+        
+        function stopCount() {
+            window.clearTimeout(t)
+        }
+
+        function syncTimer() {
+            let t = new Date()
+            document.getElementById('clock-setinterval').innerText = t.toTimeString();
+        }
+
+        function runSiTimer() {
+            siTimer = window.setInterval("syncTimer()",1000)
+        }
+
+        function stopSiTimer() {
+            window.clearInterval(siTimer);
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript 定时示例</h1>
+    <div id="container">
+        <form>
+            <input type="button" value="开始基于 setTimeOut 的定时" onClick="timedCount()">
+            <input type="button" value="停止基于 setTimeOut 的定时" onClick="stopCount()">
+        </form>
+    
+        <div id="clock-settimeout" class="clock-disp"></div>
+    
+        <form>
+            <input type="button" value="开始基于 setInterval 的定时" onClick="runSiTimer()">
+            <input type="button" value="停止基于 setInterval 的定时" onClick="stopSiTimer()">
+        </form>
+    
+        <div id="clock-setinterval" class="clock-disp"></div>
+    </div>
+</body>
+</html>
