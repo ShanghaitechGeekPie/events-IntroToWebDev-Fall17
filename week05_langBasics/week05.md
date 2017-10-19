@@ -22,6 +22,8 @@ HTML, CSS, JavaScript
 前言
 ----
 
+> 本讲讲的只是一切的基础，一般来说，制作相应内容会用到更进阶的工具。
+
 第一次的小灶活动，我们会接触到3种分工明确的计算机语言。（实际上，HTML和CSS更适合被称为格式标准。而JavaScript则是一种图灵完备的编程语言。）
 
 小灶系列本来的第一讲想介绍的是数据的存储形式，从csv、json和数据库讲起。但为了将开课时间提前到第五周，尽早开讲，同时又不会来不及做较为充足的准备，第一讲最后还是选择了从数据的呈现讲起。
@@ -128,11 +130,11 @@ CSS 入门的2个关键点是**选择器**（指定方法、属性继承）、**
 > #### 示例：盒模型
 > `examples/sec02_css/01_box_model.html` 演示了盒模型对应语句的视觉效果
 
-> #### TODO 示例：响应式布局
+> #### 示例：响应式布局
 > `examples/sec02_css/02_responsive.html` 演示了响应式布局的一种实现
 
-> #### TODO 示例：过渡动画
-> `examples/sec02_css/TODO_03_transition.html` 演示了过渡动画
+> #### 示例：过渡动画
+> `examples/sec02_css/03_transition.html` 演示了过渡动画
 
 > #### TODO 示例：关键帧动画
 > `examples/sec02_css/TODO_04_key_frame.html` 演示了关键帧动画

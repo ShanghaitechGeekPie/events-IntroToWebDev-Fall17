@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 响应式设计示例</title>
+
+    <style>
+        [class*="col-"] {
+            width: 100%;
+            background-color: rgb(200,200,200);
+        }
+        #desktop-msg {
+            display: none;
+        }
+        #mobile-msg {
+            display: block;
+        }
+        @media only screen and (min-width: 1440px) {
+            #desktop-msg {
+                display: block;
+            }
+            #mobile-msg {
+                display: none;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 响应式设计示例</h1>
+    <div id="mobile-msg">移动端查看</div>
+    <div id="desktop-msg">电脑端查看</div>
+    <div class="col-1">Some content</div>
+    <div class="col-2">Some content</div>
+    <div class="col-3">Some content</div>
+    <div class="col-4">Some content</div>
+    <div class="col-5">Some content</div>
+    <div class="col-6">Some content</div>
+    <div class="col-7">Some content</div>
+    <div class="col-8">Some content</div>
+    <div class="col-9">Some content</div>
+    <div class="col-10">Some content</div>
+    <div class="col-11">Some content</div>
+    <div class="col-12">Some content</div>
+</body>
+</html>

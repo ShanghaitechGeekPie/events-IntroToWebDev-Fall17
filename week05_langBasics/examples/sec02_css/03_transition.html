@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 过渡动画示例</title>
+
+    <style>
+        a {
+            text-decoration: none;
+
+            display: block;
+            text-align: center;
+            font-size: 6em;
+
+            color: rgb(0,100,255);
+
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+
+            padding: 1em;
+            margin: 1em;
+        }
+
+        a:hover {
+            background-color: rgb(0,100,255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 过渡动画示例</h1>
+    <a href="https://geekpie.org">
+        现在就去<br>GeekPie<br>网站瞧一瞧
+    </a>
+</body>
+</html>
