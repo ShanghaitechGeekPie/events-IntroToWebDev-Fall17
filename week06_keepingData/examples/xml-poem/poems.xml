@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="poems.xsl"?>
-<?xml-stylesheet type="text/css" href="poems.css"?>
 
 <Poems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="poems.xsd"
