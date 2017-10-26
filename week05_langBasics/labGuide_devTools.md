@@ -65,7 +65,7 @@ while (true) {
 
 ```js
 while (true) {
-    for (let i=0, i<3; i++) {
+    for (let i=0, i<3, i++) {
         console.log('好饿');
     }
     console.log('我真的好饿');

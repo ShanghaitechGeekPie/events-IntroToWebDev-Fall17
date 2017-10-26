@@ -1,0 +1,29 @@
+{
+    "poem": [
+        {
+            "title": "晓出净慈寺送林子方",
+            "author": {
+                "name": "杨万里",
+                "dynasty": "宋"
+            },
+            "verse": [
+                {
+                    "verseContent": "毕竟西湖六月中",
+                    "end": "，"
+                },
+                {
+                    "verseContent": "风光不与四时同",
+                    "end": "。"
+                },
+                {
+                    "verseContent": "接天莲叶无穷碧",
+                    "end": "，"
+                },
+                {
+                    "verseContent": "映日荷花别样红",
+                    "end": "。"
+                }
+            ]
+        }
+    ]
+}

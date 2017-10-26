@@ -1,0 +1,31 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, '冬青黑', '微软雅黑', '文泉驿微米黑', '文泉驿正黑', '华文黑体', '文泉驿点阵正黑';
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.poem-wrapper {
+	margin-top: 5em;
+	margin-bottom: 5em;
+	background-color: #fffbca;
+}
+
+div.poem-title {
+	padding-top: 1em;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	text-align: center;
+	color: rgb(135,5,5);
+}
+
+div.poem-author {
+	text-align: right;
+	padding-right: 1em;
+	color: rgb(50,50,50);
+}
+
+div.poem-verses {
+	font-size: 1.25em;
+	text-align: center;
+	padding-bottom: 2em;
+}

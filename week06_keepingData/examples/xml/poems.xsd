@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://my.webiste/someNamespace"
+    xmlns:mns="http://my.webiste/someNamespace"
+>
+
+<xs:element name="Poems">
+    <xs:complexType>
+        <xs:element name="Poem">
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string"/>
+                <xs:element name="Author">
+                    <xs:complexType name="AuthorType">
+                        <xs:all>
+                            <xs:element name="Dynasty" type="xs:string" />
+                            <xs:element name="Name" type="xs:string" />
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+				<xs:element name="Verse" type="xs:string">
+					<xs:attribute name="end" type="xs:string"/>
+				</xs:element>
+            </xs:sequence>
+        </xs:element>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

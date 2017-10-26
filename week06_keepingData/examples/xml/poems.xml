@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="poems.xsl"?>
+<?xml-stylesheet type="text/css" href="poems.css"?>
+
+<Poems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="poems.xsd"
+>
+    <Poem>
+        <Title>晓出净慈寺送林子方</Title>
+        <Author>
+            <Dynasty>宋</Dynasty>
+            <Name>杨万里</Name>
+        </Author>
+        <Verses>
+            <Verse end="，">毕竟西湖六月中</Verse>
+            <Verse end="。">风光不与四时同</Verse>
+            <Verse end="，">接天莲叶无穷碧</Verse>
+            <Verse end="。">映日荷花别样红</Verse>
+        </Verses>
+    </Poem>
+    <Poem>
+        <Title>登高</Title>
+        <Author>
+            <Dynasty>唐</Dynasty>
+            <Name>杜甫</Name>
+        </Author>
+        <Verses>
+            <Verse end="，">风急天高猿啸哀</Verse>
+            <Verse end="。">渚清沙白鸟飞回</Verse>
+            <Verse end="，">无边落木萧萧下</Verse>
+            <Verse end="。">不尽长江滚滚来</Verse>
+            <Verse end="，">万里悲秋常作客</Verse>
+            <Verse end="。">百年多病独登台</Verse>
+            <Verse end="，">艰难苦恨繁霜鬓</Verse>
+            <Verse end="。">潦倒新停浊酒杯</Verse>
+        </Verses>
+    </Poem>
+</Poems>
