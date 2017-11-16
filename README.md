@@ -11,7 +11,7 @@
 | 2017-11-2 第7周 周六 18:00—20:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 2 楼 | （运维x应用）Git 团队化工作流 | 吕文涛 |
 | 2017-11-2 第7周 周六 20:00—21:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 2 楼 | OAuth 2.0 用户鉴权协议框架的应用 | 吕文涛 |
 | 2017-11-9 第8周 周六 | 未定 | Docker·敏捷开发·编译-部署自动化 | 运维组 |
-| 2017-11-16 第9周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | [第一个 ReactJS 应用]((https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week09_firstReactJsApp/week09.md) | 石嘉禾 |
+| 2017-11-16 第9周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | [第一个 ReactJS 应用](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week09_firstReactJsApp/week09.md) | 石嘉禾 |
 | 2017-11-23 第10周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | 第一个 Django 网站 | 未定 |
 | 2017-11-30 第11周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | ReactJS 实例分析（一） | 王伟天 |
 
