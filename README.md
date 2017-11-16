@@ -10,8 +10,9 @@
 | 2017-11-2 第7周 周四 21:00—22:30 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | [Jump into Hackathon](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/tree/master/week07_jumpIntoHackathon) | 吕文涛 周杨 夏寅岑 石嘉禾 |
 | 2017-11-2 第7周 周六 18:00—20:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 2 楼 | （运维x应用）Git 团队化工作流 | 吕文涛 |
 | 2017-11-2 第7周 周六 20:00—21:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 2 楼 | OAuth 2.0 用户鉴权协议框架的应用 | 吕文涛 |
-| 2017-11-9 第8周 周六 未定 | 未定 | Docker·敏捷开发·编译-部署自动化 | （运维组）未定 |
-| 2017-11-16 第9周 周四 20:55—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | VSCode、Node.js、Webpack 的安装和使用 | 未定 |
+| 2017-11-9 第8周 周六 | 未定 | Docker·敏捷开发·编译-部署自动化 | 运维组 |
+| 2017-11-16 第9周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | 第一个 ReactJS 应用 | 石嘉禾 |
+| 2017-11-23 第10周 周四 21:00—22:00 | [学生科创中心](http://j.map.baidu.com/E6oiN) 1 楼 | 第一个 Django 网站 | 未定 |
 
 ## Misc
 
