@@ -3,4 +3,4 @@
 实战1：考试系统
 ==============
 
-本讲资源请在 QQ 群内获取
+参见本次的 [slides](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week10_testSys/week10.pdf)
