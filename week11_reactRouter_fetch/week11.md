@@ -5,7 +5,7 @@ React Router 和 Fetch API
 
 有哪些步骤
 ---------
-按照 [第9周 第一个 ReactJS 应用](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week09_firstReactJsApp/week09.md) 的内容，搭建好开发环境。然后利用 `wk11example` 内的内容，尝试以下操作。
+按照 [第9周 第一个 ReactJS 应用](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week09_firstReactJsApp/week09.md) 的内容，搭建好开发环境。然后利用 [`wk11example`](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/tree/master/week11_reactRouter_fetch/wk11example) 内的内容，尝试以下操作。
 
 关键点
 ------
