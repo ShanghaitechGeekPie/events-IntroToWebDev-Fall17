@@ -65,7 +65,7 @@ React Router
 
 React Router 的核心部分是路由功能库，当截获到目标 URL 的请求时进行匹配，当开发网页应用时，一般使用与之配套的 `react-router-dom`，这个库为功能库提供了对应的 DOM 绑定。当 URL 改变时，`Route` 组件会改变对应渲染的内容，比如更改其组件等。
 
-有一篇很到位的梳理文章：[初探 React Router 4.0](www.jianshu.com/p/e3adc9b5f75c)。
+有一篇很到位的梳理文章：[初探 React Router 4.0](http://www.jianshu.com/p/e3adc9b5f75c)。
 
 Redux
 -----
