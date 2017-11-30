@@ -7,6 +7,15 @@ React Router 和 Fetch API
 ---------
 按照 [第9周 第一个 ReactJS 应用](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week09_firstReactJsApp/week09.md) 的内容，搭建好开发环境。然后利用 [`wk11example`](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/tree/master/week11_reactRouter_fetch/wk11example) 内的内容，尝试以下操作。
 
+* 根据操作系统，修改 [`package.json` 内 `scripts` 第 7 行](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_reactRouter_fetch/wk11example/package.json#L7) 的路径格式
+* 在 `wk11example` 目录层级运行 `npm run test`，调用 Webpack 编译文件到 `wk11example/dist` 下
+* `cd dist`
+* `python3 -m http.server`
+    * 端口占用时，通过 `python3 -m http.server -h` 查阅如何指定其他端口
+* 浏览器访问相应地址，使用示例
+
+在之后的讲学中，我们将学习使用 Webpack Dev Server 而不是 Python 的 simple HTTP server。这里需要 server 的原因是各大浏览器对于本地存储文件和对于 HTTP 请求所得响应的安全措施不同，有一些操作（如 fetch 请求），是本地文件不能发起的。
+
 关键点
 ------
 * 前端路由（UI 与 URL 同步）：[React Router](https://reacttraining.com/react-router/)
