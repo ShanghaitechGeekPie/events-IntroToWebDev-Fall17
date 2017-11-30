@@ -14,8 +14,8 @@
 | 2017-11-23 第10周 周四 20:30—21:00 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | [Django + React: 考试系统](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week10_testSys/week10.md) | 石嘉禾 |
 | 2017-11-30 第11周 周四 21:00—21:40 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | [Node + React: 报名系统](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_umunc/umunc.pdf) | 王伟天 |
 | 2017-11-30 第11周 周四 21:40—22:20 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | [Lab 1: React Router 与 Fetch API](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_reactRouter_fetch/week11.md) | 石嘉禾 |
-| 2017-11-30 第12周 周四 21:00—22:00 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | Canvas 及基于其的 2D 游戏引擎 | [王悦豪](http://yuehaowang.github.io/) |
-| 2017-12-X 第12周 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | Docker·敏捷开发·编译-部署自动化 | 吕文涛 |
+| 2017-12-7 第12周 周四 21:00—22:00 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | Canvas 及基于其的 2D 游戏引擎 | [王悦豪](http://yuehaowang.github.io/) |
+| 第 12 或 13 周 | [学生创新中心](http://j.map.baidu.com/E6oiN) 1 楼 | Docker·敏捷开发·编译-部署自动化 | 吕文涛 |
 
 ## Misc
 
