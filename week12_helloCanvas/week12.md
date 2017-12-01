@@ -28,3 +28,4 @@ HTML5 Canvas是目前网页显示动画和制作页游最常用的工具之一�
 1. [Canvas API参考手册](http://www.w3school.com.cn/tags/html_ref_canvas.asp)
 2. [W3schools JavaScript教程](https://www.w3schools.com/js/default.asp)
 3. [廖雪峰JavaScript教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
+4. [10分钟入门HTML、CSS和JavaScript](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week12_helloCanvas/learn_htmlcssjs_within_10min.md)
