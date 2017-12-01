@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Images</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas"),
+				ctx = canvas.getContext("2d");
+
+			var img = new Image();
+			img.src = "./avatar.png";
+			img.onload = function (argument) {
+				/// Draw avatar
+				ctx.drawImage(img, 30, 30);
+
+				/// Draw an area of avatar
+				ctx.drawImage(img, 60, 50, 120, 120, 300, 80, 120, 120);
+
+				/// Pixel processing
+				var imageData = ctx.getImageData(50, 50, 200, 200);
+				for (var i = 0; i < imageData.data.length; i += 4) {
+					imageData.data[i] -= 50;
+					imageData.data[i + 1] -= 50;
+					imageData.data[i + 2] -= 10;
+				}
+				ctx.putImageData(imageData, 30, 320);
+
+				var imageData2 = ctx.getImageData(50, 50, 200, 200);
+				for (var i = 0; i < imageData2.data.length; i += 4) {
+					var p = (imageData2.data[i] + imageData2.data[i + 1] + imageData2.data[i + 2]) / 3;
+					imageData2.data[i] = p;
+					imageData2.data[i + 1] = p;
+					imageData2.data[i + 2] = p;
+				}
+				ctx.putImageData(imageData2, 300, 320);
+			};
+			
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" style="border: 1px #000000 solid;" width="600" height="600"></canvas>
+</body>
+</html>

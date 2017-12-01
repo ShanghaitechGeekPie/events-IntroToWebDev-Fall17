@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello, Canvas</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas");
+			var ctx = canvas.getContext("2d");
+
+			var direction = "right";
+			var speed = 5;
+			var margin = 80;
+			var color = "red";
+			var x = margin, y = margin;
+
+			setInterval(function () {
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				ctx.save();
+				ctx.translate(x, y);
+				ctx.beginPath();
+				ctx.fillStyle = color;
+				ctx.rect(0, 0, 50, 50);
+				ctx.fill();
+				ctx.restore();
+
+				if (direction == "left") {
+					color = "green";
+					x -= 5;
+
+					if (x < margin) {
+						direction = "up";
+					}
+				} else if (direction == "right") {
+					color = "red";
+					x += 5;
+
+					if (x > canvas.width - margin) {
+						direction = "down";
+					}
+				} else if (direction == "up") {
+					color = "orange";
+					y -= 5;
+
+					if (y < margin) {
+						direction = "right";
+					}
+				} else if (direction == "down") {
+					color = "blue";
+					y += 5;
+
+					if (y > canvas.height - margin) {
+						direction = "left";
+					}
+				}
+			}, 30);
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" width=800 height=600></canvas>
+</body>
+</html>

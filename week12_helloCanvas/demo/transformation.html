@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas"),
+				ctx = canvas.getContext("2d");
+
+			var img = new Image();
+			img.src = "./avatar.png";
+			img.onload = function () {
+				ctx.save();
+
+				ctx.translate(240, 0);
+				ctx.rotate(Math.PI / 2);
+				ctx.scale(1.2, 1);
+
+				/// Draw an image with an anchor
+				ctx.drawImage(img, 0, 0);
+				ctx.beginPath();
+				ctx.fillStyle = "blue";
+				ctx.arc(0, 0, 20, 0, Math.PI * 2);
+				ctx.fill();
+				ctx.restore();
+			};	
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" style="border: 1px #000000 solid;" width="800" height="600"></canvas>
+</body>
+</html>

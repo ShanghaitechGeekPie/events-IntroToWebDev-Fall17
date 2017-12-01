@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas"),
+				ctx = canvas.getContext("2d");
+
+			ctx.fillStyle="green";
+			ctx.font = "20px Arial";
+			ctx.textAlign = "left";
+			ctx.fillText("Hello world!!!", canvas.width / 2, 50);
+
+			ctx.strokeStyle="orange";
+			ctx.font = "30px Georgia";
+			ctx.textAlign = "right";
+			ctx.strokeText("Hello, html5 canvas!!", canvas.width / 2, 100);
+
+			ctx.fillStyle="purple";
+			ctx.strokeStyle="blue";
+			ctx.font = "45px Arial";
+			ctx.lineWidth = 2;
+			ctx.textAlign = "center";
+			ctx.fillText("Hello, html5!!!", canvas.width / 2, 250);
+			ctx.strokeText("Hello, html5!!!", canvas.width / 2, 250);
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" style="border: 1px #000000 solid;" width="600" height="400"></canvas>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas"),
+				ctx = canvas.getContext("2d");
+
+			/// Draw a line
+			ctx.beginPath();
+			ctx.lineWidth = 5;
+			ctx.strokeStyle = "red";
+			ctx.moveTo(20, 20);
+			ctx.lineTo(70, 70);
+			ctx.stroke();
+
+			/// Draw a rectangle
+			ctx.beginPath();
+			ctx.fillStyle = "lightblue";
+			ctx.rect(100, 20, 100, 100);
+			ctx.fill();
+
+			/// Draw a circle
+			ctx.beginPath();
+			ctx.lineWidth = 3;
+			ctx.strokeStyle = "green";
+			ctx.fillStyle = "lightgreen";
+			ctx.arc(270, 70, 50, 0, Math.PI * 2);
+			ctx.fill();
+			ctx.stroke();
+
+			/// Draw a sector
+			ctx.beginPath();
+			ctx.lineWidth = 3;
+			ctx.strokeStyle = "orangered";
+			ctx.fillStyle = "orange";
+			ctx.moveTo(70, 170);
+			ctx.arc(70, 170, 50, 0, Math.PI * 0.6);
+			ctx.closePath();
+			ctx.fill();
+			ctx.stroke();
+
+			/// Draw a triangle
+			ctx.beginPath();
+			ctx.lineWidth = 5;
+			ctx.strokeStyle = "#333333";
+			ctx.moveTo(170, 170);
+			ctx.lineTo(170, 270);
+			ctx.lineTo(270, 270);
+			ctx.closePath();
+			ctx.stroke();
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" style="border: 1px #000000 solid;" width="340" height="300"></canvas>
+</body>
+</html>
