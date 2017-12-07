@@ -26,3 +26,6 @@
 ## Misc
 
 * 本 Git 仓库是网盘式使用 Git 的典型反面例子。
+
+## Extended Topics
+* [YouTube: SVG Can Do That?](https://www.youtube.com/watch?v=dv2TvTXQ4FQ)
