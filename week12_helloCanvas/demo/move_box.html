@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript">
+		var box = {
+			x : 400,
+			y : 300
+		};
+		window.onload = function () {
+			var canvas = document.getElementById("mycanvas");
+			var ctx = canvas.getContext("2d");
+
+			window.addEventListener("keydown", function (e) {
+				if (e.keyCode == 37) {
+					box.x -= 5;
+				} else if (e.keyCode == 38) {
+					box.y -= 5;
+				} else if (e.keyCode == 39) {
+					box.x += 5;
+				} else if (e.keyCode == 40) {
+					box.y += 5;
+				}
+			});
+
+			setInterval(function () {
+				renderer(ctx);
+			}, 30);
+		};
+
+		function renderer(ctx) {
+			ctx.clearRect(0, 0, 800, 600);
+			ctx.save();
+			ctx.translate(box.x, box.y);
+			ctx.beginPath();
+			ctx.fillStyle = "green";
+			ctx.rect(0, 0, 50, 50);
+			ctx.fill();
+			ctx.restore();
+		}
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" width="800" height="600"></canvas>
+</body>
+</html>
