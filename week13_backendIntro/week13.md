@@ -79,7 +79,7 @@ Tutorial Walkthrough
 * 修改 `models.py`
 * 修改 `./[app_name]/urls.py`
 * 修改 `./[project_name]/urls.py`，增加导向 `[app_name].urls` 的 `urlpattern`
-  * `from django.urls import include`\
+  * `from django.urls import include`
   * `urlpatterns += path('[app_url]/', include('[app_name].urls'))`
 * 在 `[project_name]/settings.py` 中，`INSTALLED_APPS += '[app_name].apps.[AppName]Config'`
 * `python3 manage.py makemigrations [app_name[]]`
