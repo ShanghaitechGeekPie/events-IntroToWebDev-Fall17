@@ -4,7 +4,9 @@
 
 ### 地点
 * H2：[学生创新中心](http://j.map.baidu.com/E6oiN)
+* SIST: 信息学院
 
+### 时间
 | 周 | 时间 | 地点 | 内容 | 主讲 |
 |----|------|------|------|------|
 | 5 | 2017-10-19 21:00—22:00 | H2 1楼 | [HTML, CSS, JavaScript 基础](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week05_langBasics/week05.md) | [石嘉禾](https://sjhstone.cn) |
@@ -18,7 +20,7 @@
 | 11 | 2017-11-30 21:00—21:40 | H2 1楼 | [Node + React: 报名系统](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_umunc/umunc.pdf) | 王伟天 |
 | 11 | 2017-11-30 21:40—23:20 | H2 1楼 | [Lab 1: React Router 与 Fetch API](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_reactRouter_fetch/week11.md) | 石嘉禾 |
 | 12 | 2017-12-7 21:00—22:35 | H2 1楼 | [HTML5 Canvas 游戏开发与动画制作：Hello, Canvas](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week12_helloCanvas/week12.md) | [王悦豪](http://yuehaowang.github.io/) |
-| 13 | 2017-12-15 21:00-22:50 | H2 1楼 | [初识后端：路由、视图、ORM](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week13_backendIntro/week13.md) | 石嘉禾 |
+| 13 | 2017-12-15 21:00—22:50 | H2 1楼 | [初识后端：请求、MVC、ORM + Lab 2: 上手 Django](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week13_backendIntro/week13.md) | 石嘉禾 |
 | TBD | TBD | H2 1楼 | 容器化：Docker·敏捷开发·编译-部署自动化 | 吕文涛 |
 | TBD | TBD | H2 1楼 | 生产环境配置：Nginx + WSGI Server + Django | TBD |
 

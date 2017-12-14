@@ -7,17 +7,17 @@
 ------------------
 * 安装 pip：https://pip.pypa.io/en/stable/installing/
 * 安装 Django：`sudo -H pip3 install django`（从 2.0 起 Django **不**支持 Python 2.X）
-* 更新 Django：`sudo -H pip install django --upgrade`
+* 更新 Django：`sudo -H pip3 install django --upgrade`
 
 HTTP 请求
 ---------
 <pre>
-Request       = Request-Line
-                *(( general-header
-                    | request-header
-                    | entity-header ) CRLF)
-                CRLF
-                [ message-body ]
+Request = Request-Line
+        *(( general-header
+            | request-header
+            | entity-header ) CRLF)
+        CRLF
+        [ message-body ]
 </pre>
 
 * 请求行
@@ -25,7 +25,7 @@ Request       = Request-Line
   * 一行或多行
   * 尾随 CRLF
 * 空行，标志头部结束
-* 主干信息
+* （可选）主干信息
 
 MVC（Model-View-Controller）
 ---------------------------
@@ -38,6 +38,8 @@ MVC（Model-View-Controller）
 ORM（Object-relational Mapping，关系对象映射） 
 --------------------------------------------
 
+### 没有 ORM
+
 ```python
 class Person(models.Model):
     first_name = models.CharField(...)
@@ -46,7 +48,7 @@ class Person(models.Model):
 ```
 
 ```python
->>> for p in Person.objects.raw('SELECT * FROM applabel_person'):
+>>> for p in Person.objects.raw('SELECT * FROM appname_person'):
 ...     print(p)
 ```
 上述代码运行后，我们能够得到
@@ -55,21 +57,33 @@ John Smith
 Jane Jones
 </pre>
 
-而有 ORM 的情况下，我们一般写
+### 有了 ORM
+
+事情就 pythonic 多了
+
 ```python
-people = Person.objects.all()
+>>> for p in Person.objects.all():
+...     print(p)
 ```
+
+`.all()` 与 `.raw('SELECT * FROM appname_person')` 在此等价
 
 Tutorial Walkthrough
 --------------------
-[Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 
-部分示例代码在 [`wk13example`](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/tree/master/week13_backendIntro/wk13example) 文件夹下
+基本参照：[Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+
+这个 lab 实现的是 1~3 的删改版，代码在 [`wk13example`](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/tree/master/week13_backendIntro/wk13example) 文件夹下
 
 ### 基本概念
 
 * project
 * app
+
+* `models.py`
+* `admin.py`
+* `urls.py`
+* `views.py`
 
 ### 本次 Lab 步骤
 
