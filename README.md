@@ -17,15 +17,16 @@
 | 10 | 2017-11-23 20:30—21:00 | H2 1楼 | [Django + React: 考试系统](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week10_testSys/week10.md) | 石嘉禾 |
 | 11 | 2017-11-30 21:00—21:40 | H2 1楼 | [Node + React: 报名系统](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_umunc/umunc.pdf) | 王伟天 |
 | 11 | 2017-11-30 21:40—23:20 | H2 1楼 | [Lab 1: React Router 与 Fetch API](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week11_reactRouter_fetch/week11.md) | 石嘉禾 |
-| 12 | 2017-12-7 21:00—22:00 | H2 1楼 | [HTML5 Canvas 游戏开发与动画制作：Hello, Canvas](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week12_helloCanvas/week12.md) | [王悦豪](http://yuehaowang.github.io/) |
-| TBD | TBD | H2 1楼 | 初识后端：路由、视图、ORM | TBD |
-| TBD | TBD | H2 1楼 | 生产环境配置：Nginx + WSGI Library | TBD |
+| 12 | 2017-12-7 21:00—22:35 | H2 1楼 | [HTML5 Canvas 游戏开发与动画制作：Hello, Canvas](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week12_helloCanvas/week12.md) | [王悦豪](http://yuehaowang.github.io/) |
+| 13 | 2017-12-15 21:00-22:50 | H2 1楼 | [初识后端：路由、视图、ORM](https://github.com/ShanghaitechGeekPie/events-IntroToWebDev-Fall17/blob/master/week13_backendIntro/week13.md) | 石嘉禾 |
 | TBD | TBD | H2 1楼 | 容器化：Docker·敏捷开发·编译-部署自动化 | 吕文涛 |
+| TBD | TBD | H2 1楼 | 生产环境配置：Nginx + WSGI Server + Django | TBD |
 
 
 ## Misc
 
 * 本 Git 仓库是网盘式使用 Git 的典型反面例子。
+* 相关图书可供借阅，不完整列表在 [GeekPie 图书列表](https://github.com/ShanghaitechGeekPie/DailyWork/wiki/Books)，取书前需预约。建议室内阅读，单次借出周期最长 7 天，归还/续借需提交读书笔记或代码库地址。
 
 ## Extended Topics
 * [YouTube: SVG Can Do That?](https://www.youtube.com/watch?v=dv2TvTXQ4FQ)
