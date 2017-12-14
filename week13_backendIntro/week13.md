@@ -7,6 +7,7 @@
 ------------------
 * 安装 pip：https://pip.pypa.io/en/stable/installing/
 * 安装 Django：`sudo -H pip3 install django`（从 2.0 起 Django **不**支持 Python 2.X）
+* 更新 Django：`sudo -H pip install django --upgrade`
 
 HTTP 请求
 ---------
@@ -106,3 +107,7 @@ Tutorial Walkthrough
 
 ### pip: `requirement.txt`
 一般正式作品可能会包含 Django 以外的各类依赖，最好编写 `requirement.txt` 放在项目目录下。
+
+### 改用 `virtualenv`
+Virtualenv 能构造隔离开的开发环境，具体安装过程可以参考 [Getting a copy of Django’s development version](https://docs.djangoproject.com/en/2.0/intro/contributing/#getting-a-copy-of-django-s-development-version)
+
