@@ -3,6 +3,11 @@
 初识后端：请求、MVC、ORM
 =======================
 
+安装 pip 和 Django
+------------------
+* 安装 pip：https://pip.pypa.io/en/stable/installing/
+* 安装 Django：`sudo pip3 -H install django`（从 2.0 起 Django 不支持 Python 2.X）
+
 HTTP 请求
 ---------
 <pre>
